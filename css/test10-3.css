@@ -27,7 +27,7 @@ nav ul{
     padding: 0px;
     display: flex; /* 가로 메뉴 */
 }
-nav > ul > li{}
+/* nav > ul > li{}  이렇게 정확하게 지정하는 것도 가능함*/
 nav a{
     display: block;
     padding: 15px 20px;
@@ -73,3 +73,13 @@ section{
     padding: 30px;
     border-bottom: 1px solid #ccc;
 }
+
+/* 선택된 섹션을 배경색 적용해 도드라지게 보이기 */
+section:target{
+    background-color: #fff8e1;
+}
+
+/* .content a.btn {
+    color: white;
+    text-decoration: none;
+} */
