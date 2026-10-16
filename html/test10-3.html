@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>앵커 태그 3단계 - 링크 메뉴와 스타일</title>
+    <link rel="stylesheet" href="../css/test10-3.css">
 </head>
+
 <body>
-    
+    <!-- 상단 메뉴 -->
+     <nav>
+        <ul>
+            <li><a href="#intro">소개</a></li>
+            <li><a href="#coures">교육과정</a></li>
+            <li><a href="#contact">문의</a></li>
+            <li><a href="test10-2.html">2단계로</a></li>
+        </ul>
+     </nav>
+     
+     <section id="intro" class="content">
+        <h1>앵커 태그 3단게: 링크 메뉴와 스타일</h1>
+        <p>위 메뉴를 클릭하면 해당 섹션으로 부드럽게 이동하고, 이동한 섹션의 배경색이 바뀝니다.</p>
+        <p>
+            링크 상태 확인:
+            <a href="https://www.naver.com" target="_blank" rel="noopener noreferrer">네이버</a>
+            <a href="https://www.daum.net" target="_blank" rel="noopener noreferrer">다음</a>
+        </p>
+     </section>
+
+     <section id="coures" class="content">
+        <h2></h2>
+        <ul>
+            <li><a href="coures">HTML5</a></li>
+            <li><a href="coures">CSS3 스타일링</a></li>
+            <li><a href="coures">JavaScript 입문</a></li>
+        </ul>
+        <P><a href="contact" class="btn">수강 신청하기</a></P>
+     </section>
+
+     <section id="contact">
+        <h2>문의</h2>
+        <p><a href="mailto:starry0428@gmail.com?subject=수강%20신청" class="btn">📧이메일 문의</a></p>
+        <p><a href="tel:010-8984-3082" class="btn">☎️전화 문의</a></p>
+        <p><a href="#intro">🔝맨 위로 이동</a></p>
+     </section>
 </body>
 </html>
