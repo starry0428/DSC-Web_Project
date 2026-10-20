@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box_model_실습3</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            padding: 30px;
+        }
+        div.box3{
+            width: 200px;
+            height: 100px;
+            background-color: #f1c40f;
+
+            border: 3px solid #e67e22;
+
+            padding: 20px;
+            /* 박스 모델이 속성값을 적용 후 크기 */
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box3">border 적용 박스</div>
+</body>
+</html>

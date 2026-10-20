@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box_model_실습2</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div.box2{
+            width: 200px;
+            height: 100px;
+            background-color: #e74c3c;
+            color: white;
+            
+            /* padding 적용 후 비교 */
+            padding: 20px;
+
+            /* content-box 속성과 border-box 번갈아 적용하기 */
+            /* F12번을 통해서 가로 크기를 확인한다. */
+            box-sizing: content-box;
+
+            margin-bottom: 20px;
+        }
+        div.box2-1{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            /* margin-top: 20px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box2">padding 적용 박스2</div>
+    <div class="box2-1">padding 적용 박스2-1</div>
+</body>
+</html>
