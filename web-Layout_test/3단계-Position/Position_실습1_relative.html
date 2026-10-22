@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position_실습1_relative</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; /*전반적으로 초기화시켜주되 */
+        }
+
+        body{
+            padding: 20px;
+        }
+
+        /* 기본적으로 생성되는 태그들의 위치값을 static이라 한다. */
+        div.box{
+            width: 150px;
+            height: 60px;
+            background-color: #dbc3c7;
+            color: #333;
+            text-align: center;
+            line-height: 60px;
+            margin-bottom: 5px;
+        }
+
+        div.box-relative{
+            width: 150px;
+            height: 60px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            
+            /* 상대좌표 - 현재위치에서 이동해라*/
+            position: relative;
+            top: 20px;
+            left: 20px; 
+        }
+
+        /* 아래 박스를 위로 40px만큼 이동 후 파랑박스와 겹치도록 하기 */
+        div.bottom-box{
+            top: -40px;
+            position: relative; /*나를 기준으로만 움직이겠다*/
+        }
+    </style>
+</head>
+<body>
+    <h2>relative 이동 확인</h2>
+    <div class="box">위 박스(기본)</div>
+    <div class="box-relative">relative 이동!</div>
+    <div class="box bottom-box">아래 박스(기본)</div>
+    
+</body>
+</html>
