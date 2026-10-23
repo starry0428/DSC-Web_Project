@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position_실습4_z-index6장카드</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; /*전반적으로 초기화시켜주되 */
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        body{
+            padding: 20px;
+        }
+        
+        /* 부모 박스 layer-wrap 스타일 적용 */
+        div.layer-wrap{
+            position: relative;
+            /* 반드시 부모는 position: relative; 이다 */
+
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+
+            /* 만들어진 부모박스의 외형을 보고 싶다 */
+            border: 1px solid black;
+
+            /* 자식인 layer 공통적인 스타일 적용하기 */
+            div.layer{
+                position: absolute;
+                /* 반드시 자식은 position: absolute; 이다 */
+
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                line-height: 150px;
+                border: 1px solid black;
+            }
+
+
+            /* 자식인 layer-1,2,3에 스타일 적용하기 */
+            div.layer-1{
+                background-color: rgba(231, 76, 60, 0.9);
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+            }
+
+            div.layer-2{
+                background-color: rgba(52, 152, 219, 0.9);
+                top: 30px;
+                left: 50px;
+                z-index: 2;
+            }
+
+            div.layer-3{
+                background-color: rgba(46, 204, 113, 0.9);
+                top: 60px;
+                left: 100px;
+                z-index: 3;
+            }
+
+            div.layer-4{
+                background-color: rgba(46, 204, 113, 0.9);
+                top: 210px;
+                left: 100px;
+                z-index: 3;
+            }
+
+            div.layer-5{
+                background-color: rgba(52, 152, 219, 0.9);
+                top: 240px;
+                left: 50px;
+                z-index: 2;
+            }
+
+            div.layer-6{
+                background-color: rgba(46, 204, 113, 0.9);
+                top: 270px;
+                left: 0px;
+                z-index: 1;
+            }
+
+            div.layer-7{
+                background-color: rgba(231, 76, 60, 0.9);
+                top: 270px;
+                left: -150px;
+                z-index: 3;
+            }
+
+            div.layer-8{
+                background-color: rgba(52, 152, 219, 0.9);
+                top: 240px;
+                left: -200px;
+                z-index: 2;
+            }
+
+            div.layer-9{
+                background-color: rgba(46, 204, 113, 0.9);
+                top: 300px;
+                left: -150px;
+                z-index: 1;
+            }
+
+            div.layer-7{
+                background-color: rgba(46, 204, 113, 0.9);
+                top: 210px;
+                left: -250px;
+                z-index: 3;
+            }
+
+            div.layer-8{
+                background-color: rgba(52, 152, 219, 0.9);
+                top: 240px;
+                left: -200px;
+                z-index: 2;
+            }
+
+            div.layer-9{
+                background-color: rgba(231, 76, 60, 0.9);
+                top: 300px;
+                left: -150px;
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>■ z-index 레이어(층) 순서 확인</h2>
+    
+    <div class="layer-wrap">
+        <div class="layer layer-1">z-index1</div>
+        <div class="layer layer-2">z-index2</div>
+        <div class="layer layer-3">z-index3</div>
+
+        <div class="layer layer-4">z-index4</div>
+        <div class="layer layer-5">z-index5</div>
+        <div class="layer layer-6">z-index6</div>
+
+        <div class="layer layer-7">z-index7</div>
+        <div class="layer layer-8">z-index8</div>
+        <div class="layer layer-9">z-index9</div>
+
+        <div class="layer layer-10">z-index10</div>
+        <div class="layer layer-11">z-index11</div>
+        <div class="layer layer-12">z-index12</div>
+    </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position_실습3_fixed고정버튼</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; /*전반적으로 초기화시켜주되 */
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        body{
+            padding: 20px;
+        }
+        
+        div.content{
+            height: 1000px;
+            padding: 20px;
+            background: linear-gradient(#f0f4f8, #d0e8f0);
+        }
+        button.btn-top{
+            /* position */
+            position: fixed;
+            bottom: 20px; /*div.content의 padding 20px만큼 값을 줌*/
+            right: 20px; /*div.content의 padding 20px만큼 값을 줌*/
+
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>■fixed 고정 버튼 확인</h2>
+        <p>⬇️ 페이지를 아래로 스크롤 해보세요!</p>
+        <p>우측 하단 버튼이 항상 고정되어 있습니다.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a, ut quam ratione architecto harum saepe libero veniam inventore culpa corporis atque, provident repellendus cumque nesciunt quae aliquam molestiae amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a, ut quam ratione architecto harum saepe libero veniam inventore culpa corporis atque, provident repellendus cumque nesciunt quae aliquam molestiae amet.</p>
+    </div>
+
+    <!-- 멘 위로 버튼 -->
+     <button class="btn-top" onclick="window.scrollTo(0,0)" title="맨 위로 이동">▲</button>
+</body>
+</html>
